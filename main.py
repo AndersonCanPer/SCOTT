@@ -15,7 +15,7 @@ from utils.funces_globales import funciones
 from utils.funciones_DD import data_Driven
 from utils.casos_globales import casos
 
-@pytest.fixture
+@pytest.fixture()
 def navegador():
     navegador=webdriver.Chrome()
     navegador.get("https://formy-project.herokuapp.com/")
